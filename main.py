@@ -3,6 +3,7 @@
 # Imports typically listed at top
 # each import enables us to use logic that has been abstracted to other files and folders
 from Week_0 import tree
+from Week_0.Animation import animation
 from Week_1 import fibonacci, infodb
 from Week_2 import class_factorial, check_prime, check_prime_OOP, palindrome
 ##
@@ -16,7 +17,8 @@ banner = f"\n{border}\nPlease Select An Option\n{border}"
 main_menu = [
     ["Tree", tree.driver],
     ["List + Loops", infodb.driver],
-    ["Palindrome", palindrome.driver]
+    ["Palindrome", palindrome.driver],
+    ["Animation", animation.Animation],
 ]
 
 # Submenu list of [Prompt, Action]
