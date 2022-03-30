@@ -5,6 +5,7 @@
 from Week_0 import tree
 from Week_0.Animation import animation
 from Week_1 import fibonacci, infodb
+from Week_1.infodb2 import tester, tester2, fibtester
 from Week_2 import class_factorial, check_prime, check_prime_OOP, palindrome
 ##
 # Menu banner
@@ -28,10 +29,13 @@ sub_menu = [
     ["Factorial", class_factorial.driver],
     ["Prime Number Checker", check_prime.driver],
     ["Prime Number Checker OOP", check_prime_OOP.driver],
-    
-    
 ]
 
+lists_sub_menu = [
+    ["Lists", tester],
+    ["Factorial", tester2],
+    ["Fibonacci", fibtester],
+]
 
 def menu(banner, options):
     # header for menu
@@ -88,6 +92,10 @@ def submenu():
     title = "Function Submenu" + banner
     menu(title, sub_menu)
 
+def lists_submenu():
+    title = "Lists Submenu" + banner
+    menu(title, lists_sub_menu)
+
 
 # def menu
 # using main_menu list:
@@ -97,6 +105,7 @@ def driver():
     title = "Function Menu" + banner
     menu_list = main_menu.copy()
     menu_list.append(["Math", submenu])
+    menu_list.append(["Lists", lists_submenu])
     menu(title, menu_list)
 
 
