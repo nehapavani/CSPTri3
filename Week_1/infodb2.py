@@ -11,12 +11,12 @@ InfoDb.append({
     "Owns_Cars": ["2015 Fusion", "2011 Ranger", "2003 Excursion", "1997 F-350", "1969 Cadillac"]
 })
 InfoDb.append({
-    "FirstName": "___",
-    "LastName": "___",
-    "DOB": "___",
-    "Residence": "___",
-    "Email": "___",
-    "Owns_Cars": ["___",]
+    "FirstName": "Neha",
+    "LastName": "Valluri",
+    "DOB": "04/05/04",
+    "Residence": "San Diego",
+    "Email": "nehapavani@gmail.com",
+    "Owns_Cars": ["None",]
 })
 
 
