@@ -19,7 +19,6 @@ main_menu = [
     ["Tree", tree.driver],
     ["List + Loops", infodb.driver],
     ["Palindrome", palindrome.driver],
-    ["Animation", animation.Animation],
 ]
 
 # Submenu list of [Prompt, Action]
@@ -35,6 +34,11 @@ lists_sub_menu = [
     ["Lists", tester],
     ["Factorial", tester2],
     ["Fibonacci", fibtester],
+]
+
+animations_sub_menu = [
+    ["Tree", tree.driver],
+    ["Animation", animation.Animation],
 ]
 
 def menu(banner, options):
@@ -96,6 +100,10 @@ def lists_submenu():
     title = "Lists Submenu" + banner
     menu(title, lists_sub_menu)
 
+def animations_submenu():
+    title = "Animations Submenu" + banner
+    menu(title, animations_sub_menu)
+
 
 # def menu
 # using main_menu list:
@@ -106,6 +114,7 @@ def driver():
     menu_list = main_menu.copy()
     menu_list.append(["Math", submenu])
     menu_list.append(["Lists", lists_submenu])
+    menu_list.append(["Animations", animations_submenu])
     menu(title, menu_list)
 
 
