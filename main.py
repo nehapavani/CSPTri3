@@ -31,7 +31,7 @@ sub_menu = [
 ]
 
 lists_sub_menu = [
-    ["Lists", tester],
+    ["InfoDB v2", tester],
     ["Factorial", tester2],
     ["Fibonacci", fibtester],
 ]
